@@ -1,4 +1,21 @@
 {
   "name": "RepackAppExpo",
-  "displayName": "RepackAppExpo"
+  "displayName": "RepackAppExpo",
+  "extra": {
+    "eas": {
+      "projectId": "7491b353-ecd6-45ca-82fd-798b19379fba"
+    }
+  },
+  "newArchEnabled": true,
+  "runtimeVersion": "1.0.0",
+  "updates": {
+    "url": "https://u.expo.dev/7491b353-ecd6-45ca-82fd-798b19379fba",
+    "requestHeaders": {
+      "expo-channel-name": "staging"
+    }
+  },
+  "android": {
+    "package": "com.repackappexpo"
+  },
+  "ios": {}
 }

@@ -1,6 +1,7 @@
 import path from 'node:path';
-import { fileURLToPath } from 'node:url';
+import {fileURLToPath} from 'node:url';
 import * as Repack from '@callstack/repack';
+import {ExpoModulesPlugin} from '@callstack/repack-plugin-expo-modules';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -24,5 +25,5 @@ export default {
       ...Repack.getAssetTransformRules(),
     ],
   },
-  plugins: [new Repack.RepackPlugin()],
+  plugins: [new Repack.RepackPlugin(), new ExpoModulesPlugin()],
 };
